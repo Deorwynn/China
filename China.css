@@ -160,7 +160,7 @@ p {
 	}
 
 .footertext {
-	width: 40%;
+	width: 45%;
 	margin: 10px auto 5px auto;
 	text-align: left;
 	display: inline-table;
@@ -168,8 +168,7 @@ p {
 	
 .footertext2 {
 	width: 40%;
-	margin: 10px auto 5px auto;
-	padding-left: 10%;
+	margin: 10px 10px 5px 10px;
 	text-align: left;
 	display: inline-table;
 	}
