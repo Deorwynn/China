@@ -21,12 +21,14 @@ body {
 	
 #header {
 	height: 30%;
-	background: linear-gradient(to bottom, #180901, rgba(49, 28, 6, 0.93));
+	background: linear-gradient(to bottom, #3d3029, rgba(107, 84, 71, 0.9));
 	padding-top: 15px;
+	position: relative;
+	transition: 0.4s;
 	}
 	
 #navbar {
-	height: 15%;
+	height: 48px;
 	text-align: center;
 	margin-right: 35px;
 	}
@@ -40,9 +42,23 @@ body {
 	}
 	
 #footer:hover {
-	background: #080300;
+	background: #6b5447;
+	border-top: 1px solid #b3ccff;
 	transition: 0.4s;
+	color: #180901;
 	}
+	
+#footer:hover p {
+	color: #180901;
+}
+
+#footer:hover a {
+	color: #b3ccff;
+}
+
+#footer:hover a:hover {
+	color: #180901;
+}
 	
 #minifooter {
 	width: 100%;
@@ -55,34 +71,75 @@ body {
 	width: 100%;
 	text-align: center;
 	margin: 0;
-	position: absolute;
 	margin-top: 500px;
+	padding-bottom: 50px;
+	background: linear-gradient(to bottom, rgba(107, 84, 71, 0.9), #180901);
+	}
+	
+	#boxtxt hr {
+		margin: 50px auto;
+	}
+	
+#boxtxt2 {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 80px 0px;
+	}
+	
+#boxtxt3 {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	color: #180901;
 	background: linear-gradient(to bottom, rgba(49, 28, 6, 0.93), #180901);
 	}
 	
-#boxtxt hr {
-	color: #B5A48B;
-	text-align: center;
-	opacity: 0.3;
-	margin: 60px auto;
-	width: 30%;
-	}
-	
-	
-p {
-	font-size: 20px;
-	margin: 20px 0px;
-	color: #7a6152;
+#boxtxt2 p {
+	margin: 20px 6%;
+	color: #5c483d;
 	font-family: 'Josefin Sans', sans-serif;
 	}
+	
+#boxtxt2 h2 {
+	color: #7a6152;
+	text-shadow: 1px 1px 2px white;
+	}
+
+.light {
+	background: linear-gradient(to bottom, rgba(204, 187, 179, 0.8), rgba(184, 161, 148, 0.9), rgba(204, 187, 179, 0.8));
+	width: 60%;
+	border-radius: 4px;
+	box-shadow: 0px 0px 2px rgba(230, 238, 255, 0.8),
+				0px 0px 10px rgba(230, 238, 255, 0.5),
+				0px 0px 15px rgba(230, 238, 255, 0.4);
+	text-align: center;
+	margin: 0 auto;
+	padding: 20px 0px;
+	}
+		
+.border-right {
+	border-right: 1px solid #a38675;
+}
+	
+p {
+	font-size: 1.4em;
+	margin: 20px 0px;
+	color: #9c8563;
+	font-family: 'Josefin Sans', sans-serif;
+}
 	
 .thumb {
 	width: 420px;
 	height: 280px;
-	margin: 20px 0px;
+	margin: 20px 10px;
 	text-align: center;
-	border: 3px solid #180901;
 	border-radius: 3px;
+	}
+
+.circle:hover {
+	border: 3px solid #B5A48B;
+	transition: 0.4s;
 	}
 	
 .circle {
@@ -90,15 +147,16 @@ p {
 	height: 280px;
 	margin: 20px 0px;
 	text-align: center;
-	border: 3px solid #180901;
+	border: 3px solid transparent;
 	border-radius: 50%;
+	transition: 0.4s;
 	}
 	
 .text {
 	width: 25%;
 	height: 320px;
 	margin: 5px 22px;
-	display: inline-block;
+	display: inline-table;
 	}
 
 .footertext {
@@ -127,12 +185,13 @@ p {
 	display: block;
 	height: 500px;
 	width: 100%;
-	margin-top: 30px;
+	margin: 30px auto;
 	}
 	
 ul {
 	list-style: none;
-	display: inline;
+	display: inline-table;
+	height: 25px;
 	}
 	
 ul li {
@@ -141,6 +200,7 @@ ul li {
 	margin: 8px 16px 0px 16px;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 400;
+
 	}
 	
 ul li a {
@@ -152,12 +212,16 @@ ul li a {
 ul li ul li {
 	display: block;
 	margin: 0;
-	background: rgba(49, 28, 6, 0.93); 
+	background: rgba(107, 84, 71, 0.9); 
 	padding: 5px 10px;
 	}
 	
-ul li ul li:hover { 
-	background: #180901; 
+ul li ul li a { 
+	color: #B5A48B; 
+	}
+	
+ul li ul li a:hover { 
+	text-shadow: 0px 1px 1px #8F7756;
 	}
 	
 ul li ul {
@@ -169,16 +233,16 @@ ul li ul {
 }
 	
 ul li:hover ul {
-	display: block;
+	display: table;
 	opacity: 1;
 	visibility: visible;
 	transition: 0.2s;
 }
 	
 a:hover {
-	color: #8F7756;
+	color: #3d3029;
 	text-decoration: none;
-	text-shadow: 0px 1px 1px black;
+	text-shadow: 0px 1px 1px #8F7756;
 	}
 	
 h1 {
@@ -201,6 +265,8 @@ h2 {
 	text-align: center;
 	margin-top: 10px;
 	font-family: 'Josefin Sans', sans-serif;
+	text-shadow: 1px 1px 1px #180901,
+				1px 1px 4px #af8975;
 	font-weight: 400;
 	}
 	
@@ -215,8 +281,49 @@ hr {
 	background-image: -o-linear-gradient(left, transparent, #B5A48B, transparent); 
 	}
 	
+
 	
-  
+	
+  /* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 300px;
+  height: 243px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
 	
 /* useful code 	
 	
@@ -225,3 +332,10 @@ hr {
 .grow:hover { transform: scale(0.9); }
 
 */
+
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
