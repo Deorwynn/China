@@ -1,2 +1,1 @@
-#MySite
-This is my site
+All images are free and taken from www.pixabay.com
